@@ -1,0 +1,1 @@
+{{ tree "docker-server-configs/services/irccat.json" | explode | toJSONPretty }}
