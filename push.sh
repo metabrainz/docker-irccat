@@ -6,6 +6,8 @@
 # Usage:
 #   $ ./push.sh [version]
 
+set -e
+
 version=${1:-v0.4.1}
 
 cd `dirname "${BASH_SOURCE[0]}"`
