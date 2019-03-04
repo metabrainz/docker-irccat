@@ -16,7 +16,7 @@ LABEL org.label-schema.build-date=${BUILD_DATE} \
       org.metabrainz.based-on-image="metabrainz/consul-template-base:${CT_VERSION}" \
       org.metabrainz.irccat.version=${IRCCAT_VERSION}
 
-RUN curl -L -o /usr/local/bin/irccat -S https://github.com/irccloud/irccat/releases/download/v${IRCCAT_VERSION}/linux_amd64_irccat && \
+RUN curl -L -o /usr/local/bin/irccat -S https://github.com/irccloud/irccat/releases/download/${IRCCAT_VERSION}/linux_amd64_irccat && \
     chmod 755 /usr/local/bin/irccat
 
 RUN apt-get update && \

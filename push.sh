@@ -6,7 +6,9 @@
 # Usage:
 #   $ ./push.sh [version]
 
-version=${1:-0.4.1}
+set -e
+
+version=${1:-v0.4.1}
 
 cd `dirname "${BASH_SOURCE[0]}"`
 docker build \
